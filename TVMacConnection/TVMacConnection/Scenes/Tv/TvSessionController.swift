@@ -18,6 +18,7 @@ class TvSessionController: NSObject, ObservableObject {
   private let log = Logger()
 
   @Published var connectedUser: [User] = []
+  @Published var connectedPeers: [MCPeerID] = []
 
   override init() {
     precondition(Thread.isMainThread)
@@ -54,9 +55,9 @@ extension TvSessionController: MCSessionDelegate {
   func session(_ session: MCSession, peer peerID: MCPeerID, didChange state: MCSessionState) {
     log.info("peer \(peerID) didChangeState: \(state.debugDescription)")
     print("DEBUG MODE: \(peerID)")
-//    DispatchQueue.main.async {
-//      self.connectedPeers = session.connectedPeers
-//    }
+    DispatchQueue.main.async {
+      self.connectedPeers = session.connectedPeers
+    }
   }
 
   func session(_ session: MCSession, didReceive data: Data, fromPeer peerID: MCPeerID) {

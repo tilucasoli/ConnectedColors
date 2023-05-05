@@ -61,6 +61,7 @@ class iPhoneSessionController: NSObject, ObservableObject {
 
   deinit {
     self.serviceBrowser.stopBrowsingForPeers()
+    self.session.disconnect()
   }
 
   func send(text: String) {

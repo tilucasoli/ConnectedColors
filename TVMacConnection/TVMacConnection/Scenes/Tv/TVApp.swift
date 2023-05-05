@@ -9,14 +9,28 @@ import SwiftUI
 import Combine
 
 struct TVApp: View {
-  @ObservedObject var sessionController = TvSessionController()
+
+  @StateObject var sessionController = TvSessionController()
 
   var body: some View {
     VStack (alignment: .leading) {
+      Text(sessionController.connectedPeers.map(\.displayName).description)
+        .fontDesign(.monospaced)
+        .foregroundColor(.green)
       Text("Residentes")
         .font(.largeTitle)
         .fontWeight(.semibold)
-      Text(sessionController.connectedUser.map(\.name).description)
+      HStack(spacing: 8) {
+        ForEach(sessionController.connectedUser.map(\.name), id: \.description) { message in
+          Text(message)
+            .foregroundColor(.black)
+            .padding(8)
+            .background {
+              Color.white.opacity(0.9)
+                .cornerRadius(8)
+            }
+        }
+      }
     }
   }
 }
