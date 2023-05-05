@@ -1,0 +1,638 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03135FC82A04B973000FD5B7 /* TVMacConnectionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03135FC72A04B973000FD5B7 /* TVMacConnectionApp.swift */; };
+		03135FCA2A04B973000FD5B7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03135FC92A04B973000FD5B7 /* ContentView.swift */; };
+		03135FCC2A04B974000FD5B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03135FCB2A04B974000FD5B7 /* Assets.xcassets */; };
+		03135FCF2A04B974000FD5B7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03135FCE2A04B974000FD5B7 /* Preview Assets.xcassets */; };
+		03135FD92A04B974000FD5B7 /* TVMacConnectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03135FD82A04B974000FD5B7 /* TVMacConnectionTests.swift */; };
+		03135FE32A04B974000FD5B7 /* TVMacConnectionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03135FE22A04B974000FD5B7 /* TVMacConnectionUITests.swift */; };
+		03135FE52A04B974000FD5B7 /* TVMacConnectionUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03135FE42A04B974000FD5B7 /* TVMacConnectionUITestsLaunchTests.swift */; };
+		03135FF22A04B984000FD5B7 /* TvSessionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03135FF12A04B984000FD5B7 /* TvSessionController.swift */; };
+		03135FF42A04B9BF000FD5B7 /* iPhoneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03135FF32A04B9BF000FD5B7 /* iPhoneApp.swift */; };
+		03135FF62A04B9CB000FD5B7 /* TVApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03135FF52A04B9CB000FD5B7 /* TVApp.swift */; };
+		03135FFA2A04BF53000FD5B7 /* iPhoneSessionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03135FF92A04BF53000FD5B7 /* iPhoneSessionController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		03135FD52A04B974000FD5B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03135FBC2A04B972000FD5B7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03135FC32A04B973000FD5B7;
+			remoteInfo = TVMacConnection;
+		};
+		03135FDF2A04B974000FD5B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03135FBC2A04B972000FD5B7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03135FC32A04B973000FD5B7;
+			remoteInfo = TVMacConnection;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03135FC42A04B973000FD5B7 /* TVMacConnection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TVMacConnection.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		03135FC72A04B973000FD5B7 /* TVMacConnectionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVMacConnectionApp.swift; sourceTree = "<group>"; };
+		03135FC92A04B973000FD5B7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		03135FCB2A04B974000FD5B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		03135FCE2A04B974000FD5B7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		03135FD42A04B974000FD5B7 /* TVMacConnectionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TVMacConnectionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		03135FD82A04B974000FD5B7 /* TVMacConnectionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVMacConnectionTests.swift; sourceTree = "<group>"; };
+		03135FDE2A04B974000FD5B7 /* TVMacConnectionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TVMacConnectionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		03135FE22A04B974000FD5B7 /* TVMacConnectionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVMacConnectionUITests.swift; sourceTree = "<group>"; };
+		03135FE42A04B974000FD5B7 /* TVMacConnectionUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVMacConnectionUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		03135FF12A04B984000FD5B7 /* TvSessionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvSessionController.swift; sourceTree = "<group>"; };
+		03135FF32A04B9BF000FD5B7 /* iPhoneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPhoneApp.swift; sourceTree = "<group>"; };
+		03135FF52A04B9CB000FD5B7 /* TVApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVApp.swift; sourceTree = "<group>"; };
+		03135FF92A04BF53000FD5B7 /* iPhoneSessionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPhoneSessionController.swift; sourceTree = "<group>"; };
+		03135FFC2A04C3ED000FD5B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		03135FC12A04B973000FD5B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03135FD12A04B974000FD5B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03135FDB2A04B974000FD5B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03135FBB2A04B972000FD5B7 = {
+			isa = PBXGroup;
+			children = (
+				03135FC62A04B973000FD5B7 /* TVMacConnection */,
+				03135FD72A04B974000FD5B7 /* TVMacConnectionTests */,
+				03135FE12A04B974000FD5B7 /* TVMacConnectionUITests */,
+				03135FC52A04B973000FD5B7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		03135FC52A04B973000FD5B7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				03135FC42A04B973000FD5B7 /* TVMacConnection.app */,
+				03135FD42A04B974000FD5B7 /* TVMacConnectionTests.xctest */,
+				03135FDE2A04B974000FD5B7 /* TVMacConnectionUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		03135FC62A04B973000FD5B7 /* TVMacConnection */ = {
+			isa = PBXGroup;
+			children = (
+				03135FFC2A04C3ED000FD5B7 /* Info.plist */,
+				03135FF72A04BEFD000FD5B7 /* Scenes */,
+				03135FC72A04B973000FD5B7 /* TVMacConnectionApp.swift */,
+				03135FC92A04B973000FD5B7 /* ContentView.swift */,
+				03135FCB2A04B974000FD5B7 /* Assets.xcassets */,
+				03135FCD2A04B974000FD5B7 /* Preview Content */,
+			);
+			path = TVMacConnection;
+			sourceTree = "<group>";
+		};
+		03135FCD2A04B974000FD5B7 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				03135FCE2A04B974000FD5B7 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		03135FD72A04B974000FD5B7 /* TVMacConnectionTests */ = {
+			isa = PBXGroup;
+			children = (
+				03135FD82A04B974000FD5B7 /* TVMacConnectionTests.swift */,
+			);
+			path = TVMacConnectionTests;
+			sourceTree = "<group>";
+		};
+		03135FE12A04B974000FD5B7 /* TVMacConnectionUITests */ = {
+			isa = PBXGroup;
+			children = (
+				03135FE22A04B974000FD5B7 /* TVMacConnectionUITests.swift */,
+				03135FE42A04B974000FD5B7 /* TVMacConnectionUITestsLaunchTests.swift */,
+			);
+			path = TVMacConnectionUITests;
+			sourceTree = "<group>";
+		};
+		03135FF72A04BEFD000FD5B7 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				03135FFB2A04C04B000FD5B7 /* Tv */,
+				03135FF82A04BF46000FD5B7 /* iPhone */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		03135FF82A04BF46000FD5B7 /* iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				03135FF92A04BF53000FD5B7 /* iPhoneSessionController.swift */,
+				03135FF32A04B9BF000FD5B7 /* iPhoneApp.swift */,
+			);
+			path = iPhone;
+			sourceTree = "<group>";
+		};
+		03135FFB2A04C04B000FD5B7 /* Tv */ = {
+			isa = PBXGroup;
+			children = (
+				03135FF12A04B984000FD5B7 /* TvSessionController.swift */,
+				03135FF52A04B9CB000FD5B7 /* TVApp.swift */,
+			);
+			path = Tv;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		03135FC32A04B973000FD5B7 /* TVMacConnection */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03135FE82A04B974000FD5B7 /* Build configuration list for PBXNativeTarget "TVMacConnection" */;
+			buildPhases = (
+				03135FC02A04B973000FD5B7 /* Sources */,
+				03135FC12A04B973000FD5B7 /* Frameworks */,
+				03135FC22A04B973000FD5B7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TVMacConnection;
+			productName = TVMacConnection;
+			productReference = 03135FC42A04B973000FD5B7 /* TVMacConnection.app */;
+			productType = "com.apple.product-type.application";
+		};
+		03135FD32A04B974000FD5B7 /* TVMacConnectionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03135FEB2A04B974000FD5B7 /* Build configuration list for PBXNativeTarget "TVMacConnectionTests" */;
+			buildPhases = (
+				03135FD02A04B974000FD5B7 /* Sources */,
+				03135FD12A04B974000FD5B7 /* Frameworks */,
+				03135FD22A04B974000FD5B7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				03135FD62A04B974000FD5B7 /* PBXTargetDependency */,
+			);
+			name = TVMacConnectionTests;
+			productName = TVMacConnectionTests;
+			productReference = 03135FD42A04B974000FD5B7 /* TVMacConnectionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		03135FDD2A04B974000FD5B7 /* TVMacConnectionUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03135FEE2A04B974000FD5B7 /* Build configuration list for PBXNativeTarget "TVMacConnectionUITests" */;
+			buildPhases = (
+				03135FDA2A04B974000FD5B7 /* Sources */,
+				03135FDB2A04B974000FD5B7 /* Frameworks */,
+				03135FDC2A04B974000FD5B7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				03135FE02A04B974000FD5B7 /* PBXTargetDependency */,
+			);
+			name = TVMacConnectionUITests;
+			productName = TVMacConnectionUITests;
+			productReference = 03135FDE2A04B974000FD5B7 /* TVMacConnectionUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		03135FBC2A04B972000FD5B7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					03135FC32A04B973000FD5B7 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					03135FD32A04B974000FD5B7 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 03135FC32A04B973000FD5B7;
+					};
+					03135FDD2A04B974000FD5B7 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 03135FC32A04B973000FD5B7;
+					};
+				};
+			};
+			buildConfigurationList = 03135FBF2A04B972000FD5B7 /* Build configuration list for PBXProject "TVMacConnection" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 03135FBB2A04B972000FD5B7;
+			productRefGroup = 03135FC52A04B973000FD5B7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				03135FC32A04B973000FD5B7 /* TVMacConnection */,
+				03135FD32A04B974000FD5B7 /* TVMacConnectionTests */,
+				03135FDD2A04B974000FD5B7 /* TVMacConnectionUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		03135FC22A04B973000FD5B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03135FCF2A04B974000FD5B7 /* Preview Assets.xcassets in Resources */,
+				03135FCC2A04B974000FD5B7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03135FD22A04B974000FD5B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03135FDC2A04B974000FD5B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		03135FC02A04B973000FD5B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03135FCA2A04B973000FD5B7 /* ContentView.swift in Sources */,
+				03135FFA2A04BF53000FD5B7 /* iPhoneSessionController.swift in Sources */,
+				03135FF62A04B9CB000FD5B7 /* TVApp.swift in Sources */,
+				03135FF22A04B984000FD5B7 /* TvSessionController.swift in Sources */,
+				03135FF42A04B9BF000FD5B7 /* iPhoneApp.swift in Sources */,
+				03135FC82A04B973000FD5B7 /* TVMacConnectionApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03135FD02A04B974000FD5B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03135FD92A04B974000FD5B7 /* TVMacConnectionTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03135FDA2A04B974000FD5B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03135FE52A04B974000FD5B7 /* TVMacConnectionUITestsLaunchTests.swift in Sources */,
+				03135FE32A04B974000FD5B7 /* TVMacConnectionUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		03135FD62A04B974000FD5B7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 03135FC32A04B973000FD5B7 /* TVMacConnection */;
+			targetProxy = 03135FD52A04B974000FD5B7 /* PBXContainerItemProxy */;
+		};
+		03135FE02A04B974000FD5B7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 03135FC32A04B973000FD5B7 /* TVMacConnection */;
+			targetProxy = 03135FDF2A04B974000FD5B7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		03135FE62A04B974000FD5B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		03135FE72A04B974000FD5B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		03135FE92A04B974000FD5B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TVMacConnection/Preview Content\"";
+				DEVELOPMENT_TEAM = 62NRBAKMQ3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TVMacConnection/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = lucasOliveira.TVMacConnection;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "appletvos appletvsimulator iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,3";
+			};
+			name = Debug;
+		};
+		03135FEA2A04B974000FD5B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TVMacConnection/Preview Content\"";
+				DEVELOPMENT_TEAM = 62NRBAKMQ3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TVMacConnection/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = lucasOliveira.TVMacConnection;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "appletvos appletvsimulator iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,3";
+			};
+			name = Release;
+		};
+		03135FEC2A04B974000FD5B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 62NRBAKMQ3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = lucasOliveira.TVMacConnectionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TVMacConnection.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TVMacConnection";
+			};
+			name = Debug;
+		};
+		03135FED2A04B974000FD5B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 62NRBAKMQ3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = lucasOliveira.TVMacConnectionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TVMacConnection.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TVMacConnection";
+			};
+			name = Release;
+		};
+		03135FEF2A04B974000FD5B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 62NRBAKMQ3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = lucasOliveira.TVMacConnectionUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TVMacConnection;
+			};
+			name = Debug;
+		};
+		03135FF02A04B974000FD5B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 62NRBAKMQ3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = lucasOliveira.TVMacConnectionUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TVMacConnection;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		03135FBF2A04B972000FD5B7 /* Build configuration list for PBXProject "TVMacConnection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03135FE62A04B974000FD5B7 /* Debug */,
+				03135FE72A04B974000FD5B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03135FE82A04B974000FD5B7 /* Build configuration list for PBXNativeTarget "TVMacConnection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03135FE92A04B974000FD5B7 /* Debug */,
+				03135FEA2A04B974000FD5B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03135FEB2A04B974000FD5B7 /* Build configuration list for PBXNativeTarget "TVMacConnectionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03135FEC2A04B974000FD5B7 /* Debug */,
+				03135FED2A04B974000FD5B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03135FEE2A04B974000FD5B7 /* Build configuration list for PBXNativeTarget "TVMacConnectionUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03135FEF2A04B974000FD5B7 /* Debug */,
+				03135FF02A04B974000FD5B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 03135FBC2A04B972000FD5B7 /* Project object */;
+}
