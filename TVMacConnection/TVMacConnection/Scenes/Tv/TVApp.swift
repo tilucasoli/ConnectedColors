@@ -12,13 +12,12 @@ struct TVApp: View {
   @ObservedObject var sessionController = TvSessionController()
 
   var body: some View {
-    ZStack {
-      sessionController.currentColor?.color ?? .gray
-      Text(sessionController.connectedPeers.map(\.displayName).description)
-        .font(.title)
+    VStack (alignment: .leading) {
+      Text("Residentes")
+        .font(.largeTitle)
         .fontWeight(.semibold)
+      Text(sessionController.connectedUser.map(\.name).description)
     }
-    .ignoresSafeArea()
   }
 }
 

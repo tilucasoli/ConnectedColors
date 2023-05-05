@@ -7,49 +7,112 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "DC5E187B-8BFB-4C1F-89D7-FDC17DE4BC76"
-            shouldBeEnabled = "Yes"
+            uuid = "664C5814-2487-4855-8CBB-6FACE585468C"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TVMacConnection/Scenes/iPhone/iPhoneSessionController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "96"
-            endingLineNumber = "96"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
+            landmarkName = "send(text:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "664C5814-2487-4855-8CBB-6FACE585468C - ba22c5f3e862da9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TVMacConnection.iPhoneSessionController.send() -&gt; ()"
+                  moduleName = "TVMacConnection"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lucasoliveira/Developer/Apple%20Developer%20Residence/ConnectedColors/TVMacConnection/TVMacConnection/Scenes/iPhone/iPhoneSessionController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "74"
+                  endingLineNumber = "74"
+                  offsetFromSymbolStart = "948">
+               </Location>
+               <Location
+                  uuid = "664C5814-2487-4855-8CBB-6FACE585468C - c36ead86efb03095"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TVMacConnection.iPhoneSessionController.send(text: Swift.String) -&gt; ()"
+                  moduleName = "TVMacConnection"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lucasoliveira/Developer/Apple%20Developer%20Residence/ConnectedColors/TVMacConnection/TVMacConnection/Scenes/iPhone/iPhoneSessionController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "75"
+                  endingLineNumber = "75"
+                  offsetFromSymbolStart = "2056">
+               </Location>
+               <Location
+                  uuid = "664C5814-2487-4855-8CBB-6FACE585468C - c36ead86efb03095"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TVMacConnection.iPhoneSessionController.send(text: Swift.String) -&gt; ()"
+                  moduleName = "TVMacConnection"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lucasoliveira/Developer/Apple%20Developer%20Residence/ConnectedColors/TVMacConnection/TVMacConnection/Scenes/iPhone/iPhoneSessionController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "75"
+                  endingLineNumber = "75"
+                  offsetFromSymbolStart = "1884">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "74409A90-F688-4807-BFB7-A146668E97C9"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TVMacConnection/Scenes/Tv/TvSessionController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
             landmarkName = "session(_:didReceive:fromPeer:)"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "9F2306B2-3AA0-475B-88F8-A34B137C8F91"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TVMacConnection/Scenes/iPhone/iPhoneSessionController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "81"
-            endingLineNumber = "81"
-            landmarkName = "browser(_:foundPeer:withDiscoveryInfo:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "066F43BE-FE33-42E2-8683-473F63A2FDC7"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TVMacConnection/Scenes/iPhone/iPhoneSessionController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "85"
-            endingLineNumber = "85"
-            landmarkName = "browser(_:lostPeer:)"
-            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "74409A90-F688-4807-BFB7-A146668E97C9 - 85a4f254d6e9bd1a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TVMacConnection.TvSessionController.session(_: __C.MCSession, didReceive: Foundation.Data, fromPeer: __C.MCPeerID) -&gt; ()"
+                  moduleName = "TVMacConnection"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lucasoliveira/Developer/Apple%20Developer%20Residence/ConnectedColors/TVMacConnection/TVMacConnection/Scenes/Tv/TvSessionController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "63"
+                  endingLineNumber = "63"
+                  offsetFromSymbolStart = "400">
+               </Location>
+               <Location
+                  uuid = "74409A90-F688-4807-BFB7-A146668E97C9 - 85a4f254d6e9bd1a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TVMacConnection.TvSessionController.session(_: __C.MCSession, didReceive: Foundation.Data, fromPeer: __C.MCPeerID) -&gt; ()"
+                  moduleName = "TVMacConnection"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lucasoliveira/Developer/Apple%20Developer%20Residence/ConnectedColors/TVMacConnection/TVMacConnection/Scenes/Tv/TvSessionController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "63"
+                  endingLineNumber = "63"
+                  offsetFromSymbolStart = "500">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

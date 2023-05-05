@@ -9,23 +9,38 @@ import SwiftUI
 #if os(iOS)
 struct iPhoneApp: View {
   @ObservedObject var sessionController = iPhoneSessionController()
+  @State var name: String = ""
 
   var body: some View {
-    VStack(spacing: 16) {
-      CustomButton(title: "Red",
-                   color: .red) {
-        sessionController.send(color: .red)
+    VStack(alignment: .leading, spacing: 16) {
+      Spacer()
+      TextField(text: $name) {
+        Text("")
+          .foregroundColor(.black)
       }
-      CustomButton(title: "Green",
-                   color: .green) {
-        sessionController.send(color: .green)
+      .padding(16)
+      .background {
+        RoundedRectangle(cornerRadius: 10)
+          .foregroundColor(.gray.opacity(0.2))
       }
-      CustomButton(title: "Blue",
-                   color: .blue) {
-        sessionController.send(color: .blue)
+      HStack {
+        Spacer()
+        Text(UIDevice.current.identifierForVendor?.description ?? "")
+          .foregroundColor(.gray)
+          .fontWeight(.bold)
+        Spacer()
+      }
+      .padding(16)
+      .background {
+        RoundedRectangle(cornerRadius: 10)
+          .foregroundColor(.gray.opacity(0.2))
+      }
+      Spacer()
+      CustomButton(title: "Send", color: .blue) {
+        sessionController.send(text: name)
       }
     }
-    .padding()
+    .padding(16)
   }
 }
 
@@ -47,9 +62,13 @@ struct CustomButton: View {
         .fontWeight(.bold)
         .foregroundColor(.white)
     })
-    .controlSize(.large)
-    .buttonStyle(.borderedProminent)
-    .tint(color)
+    .frame(maxWidth: .infinity, maxHeight: 50)
+    .background {
+      Color.blue
+        .cornerRadius(10)
+    }
+//    .buttonStyle(.borderedProminent)
+//    .tint(color)
   }
 }
 #endif

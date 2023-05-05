@@ -29,6 +29,11 @@ enum NamedColor: String, CaseIterable {
 
 }
 
+struct User: Codable {
+  var name: String
+  var serialNumber: String
+}
+
 class iPhoneSessionController: NSObject, ObservableObject {
   private let serviceType = "example-color"
 
@@ -37,7 +42,9 @@ class iPhoneSessionController: NSObject, ObservableObject {
   private let serviceBrowser: MCNearbyServiceBrowser
   private let log = Logger()
 
-  @Published var currentColor: NamedColor? = nil
+//  @Published var currentUser = User(name: "", serialNumber: UIDevice.current.identifierForVendor?.description ?? "")
+  @Published var name: String = ""
+  @Published var isConnected: Bool = false
 
   override init() {
     precondition(Thread.isMainThread)
@@ -56,14 +63,17 @@ class iPhoneSessionController: NSObject, ObservableObject {
     self.serviceBrowser.stopBrowsingForPeers()
   }
 
-  func send(color: NamedColor) {
+  func send(text: String) {
     precondition(Thread.isMainThread)
-    log.info("sendColor: \(String(describing: color)) to \(self.session.connectedPeers.count) peers")
-    self.currentColor = color
+//    log.info("sendColor: \(String(describing: color)) to \(self.session.connectedPeers.count) peers")
 
     if !session.connectedPeers.isEmpty {
       do {
-        try session.send(color.rawValue.data(using: .utf8)!, toPeers: session.connectedPeers, with: .reliable)
+        let encoder = JSONEncoder()
+        encoder.outputFormatting = .prettyPrinted
+        let jsonData = try encoder.encode(User(name: text, serialNumber: UIDevice.current.identifierForVendor?.description ?? ""))
+
+        try session.send(jsonData, toPeers: session.connectedPeers, with: .reliable)
       } catch {
         log.error("Error for sending: \(String(describing: error))")
       }
@@ -92,11 +102,8 @@ extension iPhoneSessionController: MCSessionDelegate {
   }
 
   func session(_ session: MCSession, didReceive data: Data, fromPeer peerID: MCPeerID) {
-    if let string = String(data: data, encoding: .utf8), let color = NamedColor(rawValue: string) {
+    if let string = String(data: data, encoding: .utf8) {
       log.info("didReceive color \(string)")
-      DispatchQueue.main.async {
-        self.currentColor = color
-      }
     } else {
       log.info("didReceive invalid value \(data.count) bytes")
     }

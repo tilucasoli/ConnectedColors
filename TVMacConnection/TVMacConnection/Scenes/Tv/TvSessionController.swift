@@ -17,8 +17,7 @@ class TvSessionController: NSObject, ObservableObject {
   private let serviceAdvertiser: MCNearbyServiceAdvertiser
   private let log = Logger()
 
-  @Published var currentColor: NamedColor? = nil
-  @Published var connectedPeers: [MCPeerID] = []
+  @Published var connectedUser: [User] = []
 
   override init() {
     precondition(Thread.isMainThread)
@@ -55,16 +54,24 @@ extension TvSessionController: MCSessionDelegate {
   func session(_ session: MCSession, peer peerID: MCPeerID, didChange state: MCSessionState) {
     log.info("peer \(peerID) didChangeState: \(state.debugDescription)")
     print("DEBUG MODE: \(peerID)")
-    DispatchQueue.main.async {
-      self.connectedPeers = session.connectedPeers
-    }
+//    DispatchQueue.main.async {
+//      self.connectedPeers = session.connectedPeers
+//    }
   }
 
   func session(_ session: MCSession, didReceive data: Data, fromPeer peerID: MCPeerID) {
-    if let string = String(data: data, encoding: .utf8), let color = NamedColor(rawValue: string) {
-      log.info("didReceive color \(string)")
-      DispatchQueue.main.async {
-        self.currentColor = color
+    if let string = String(data: data, encoding: .utf8) {
+//      log.info("didReceive color \(string)")
+      do {
+        let decoder = JSONDecoder()
+        let decodedUser = try decoder.decode(User.self, from: data)
+
+        DispatchQueue.main.async {
+          self.connectedUser.append(decodedUser)
+        }
+      }
+      catch {
+        print(error)
       }
     } else {
       log.info("didReceive invalid value \(data.count) bytes")
